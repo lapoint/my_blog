@@ -1,0 +1,6 @@
+<%= link_to "Write a new post", new_post_path, class: 'btn' %>
+
+<hr>
+
+
+<%= simple_table_for @posts, with: PostsTable %>
