@@ -1,0 +1,76 @@
+http://mailcatcher.me/
+
+rails g mailer CommentNotificationMailer notification
+
+gem install mailcatcher
+
+development.rb >
+config.action_mailer.delivery_method = :smtp
+config.action_mailer.smtp_settings = { :address => "localhost", :port => 1025 }
+
+rbenv rehash
+mailcatcher
+
+rails c >
+CommentNotificationMailer.notification
+.deliver
+
+
+comment or post.rb >
+after_create : send_notification
+
+private
+
+--
+
+comment_notification_mailer.rb >
+'write whatever you want'
+
+
+
+
+---------------------------
+
+# - create these apps as a job application
+fizzbuzz
+
+fibonacci
+
+Project Euler.net
+
+
+
+touch three_or_five.rb
+
+
+
+Angel list talent profiles
+contribute to open sources github projects
+github - issues
+
+
+iOS Dev
+Rubymotion.com
+
+
+-parse.com - for mobile dbs
+
+#Read test driven development
+by Kent Beck
+-writing code that tests your code
+
+
+
+
+nettuts sublime text
+-7 package control
+
+
+
+cmd + shift + p
+package ... install
+
+
+
+
+
